@@ -12,7 +12,7 @@ You can use by the following steps.
 2. Add the following code into your init file:
 
 ```lisp
-  (require 'fringe-current-line)
+(require 'fringe-current-line)
 ```
 
 3. Activate the mode.
@@ -23,7 +23,7 @@ You can use by the following steps.
 * To enable it globally, add the following into your init file:
 
 ```lisp
-    (global-fringe-current-line-mode 1)
+(global-fringe-current-line-mode 1)
 ```
 
   You can toggle it by running `M-x global-fringe-current-line-mode`.
