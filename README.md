@@ -2,6 +2,8 @@
 
 Show current line on the fringe.
 
+![screenshot](http://kyanagi.github.io/img/fringe-current-line.png)
+
 ## Description
 
 fringe-current-line is a package to indicate current line on the fringe.
