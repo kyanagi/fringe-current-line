@@ -82,11 +82,13 @@
     (setq fcl-fringe-overlay nil)))
 
 (defun fringe-current-line-mode-on ()
+  (add-hook 'pre-command-hook 'fcl-clear-fringe-bitmap)
   (add-hook 'post-command-hook 'fcl-display-fringe-bitmap-at-current-line nil t)
   )
 
 (defun fringe-current-line-mode-off ()
   (fcl-clear-fringe-bitmap)
+  (remove-hook 'pre-command-hook 'fcl-clear-fringe-bitmap t)
   (remove-hook 'post-command-hook 'fcl-display-fringe-bitmap-at-current-line t)
   )
 
